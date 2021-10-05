@@ -23,3 +23,15 @@ body {
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  justify-content: space-between;
+}
+
+main {
+  background-color: #f4f1ec;
+  margin: auto;
+  font-size: 18px;
+  width: 90%;
+}

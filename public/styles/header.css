@@ -1,0 +1,18 @@
+/* Profile header */
+
+#main-header {
+  padding-top: 140px;
+  display: flex;
+  height: 500px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #E6A400;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #FFFF;
+}
+
+.light {
+  font-weight: 300;
+}
