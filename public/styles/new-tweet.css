@@ -6,12 +6,21 @@ section.new-tweet{
   align-items: center;
 } */
 
+section p {
+  margin-top: 0px;
+  color: grey;
+  font-size: 22px;
+  font-weight: bold;
+}
+
 section form {
+  height: 150px;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 /* Box placeholder to tweet*/
