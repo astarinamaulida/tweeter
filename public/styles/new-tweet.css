@@ -13,6 +13,7 @@ section p {
   font-weight: bold;
 }
 
+/* Text to insert in the form box placeholder */
 section form {
   height: 150px;
   width: 100%;
@@ -36,6 +37,7 @@ textarea {
   height: 80px;
 }
 
+/* Position of Tweet button and counter */
 form footer{
   display: flex;
   justify-content: space-between;
@@ -52,6 +54,10 @@ input {
   padding-right: 0.5em;
   padding-top: 0.25em;
   padding-bottom: 0.25em;
+}
+
+.red {
+  color: red
 }
 
 /* Character counter
