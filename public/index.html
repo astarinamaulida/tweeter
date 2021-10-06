@@ -53,15 +53,37 @@
     <main class="container">
       <section class="new-tweet">
         <form action="/tweets/" method="POST">
-          <p>What are you humming about?</p>
-          <textarea name="text" placeholder=""></textarea>
+          <textarea name="text" placeholder="What are you humming about?"></textarea>
           <footer>  
           <input type="submit" value="Tweet">
             <span class="counter">140</span>
           </footer>
         </form>
       </section>
-      <section class="all-tweets"></section>
+
+      <section class="all-tweets">
+        <article class="tweet">
+          <header class="tweet header">
+            <div class="user-profile">
+              <img id="icon" src="https://i.imgur.com/73hZDYK.png"/>
+              <p>Mr. Foodie</p>
+            </div>
+            <div class="username">
+              <span> @mrfoodie </span>
+            </div>
+            <p>I love to drink bubble tea!</p>
+          </header>
+          
+          <footer>
+            <div>10 days ago</div>
+            <div class = "icons">
+              <i class="fa-solid fa-retweet"></i>
+              <i class="fa-solid fa-flag"></i>
+              <i class="fa-solid fa-heart"></i>
+            </div>
+          </footer>
+        </article>
+      </section>
     </main>
   </body>
 </html>

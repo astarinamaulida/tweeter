@@ -18,6 +18,8 @@ section form {
 
 /* Box placeholder to tweet*/
 textarea {
+  font-size: 25px;
+  font-weight: bold;
   background-color: #f4f1ec;
   font-family: 'Source Sans Pro', sans-serif;
   color: #545149;
@@ -26,7 +28,7 @@ textarea {
   border-bottom: 1px solid grey;
   border-width: thick;
   width: 100%;
-  height: 80px;
+  height: 50px;
 }
 
 /* Position of Tweet button and counter */
@@ -41,6 +43,7 @@ input {
   background-color: #4056A1;
   font-family: 'Bungee', sans-serif;
   color: #FFFFFF;
+  font-size: 20px;
   margin-top: 10px;
   padding-left: 0.5em;
   padding-right: 0.5em;
