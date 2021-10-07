@@ -43,12 +43,20 @@ input {
   background-color: #4056A1;
   font-family: 'Bungee', sans-serif;
   color: #FFFFFF;
-  font-size: 20px;
+  font-size: 25px;
   margin-top: 10px;
   padding-left: 0.5em;
   padding-right: 0.5em;
   padding-top: 0.25em;
   padding-bottom: 0.25em;
+  border: 3px solid transparent;
+  
+}
+
+/* Tweet box hover*/
+input:hover {
+  -webkit-box-shadow: 0px 0px 3px 5px rgba(18,141,255,0.48); 
+  box-shadow: 0px 0px 3px 5px rgba(18,141,255,0.48);
 }
 
 .red {

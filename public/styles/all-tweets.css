@@ -16,7 +16,7 @@ article.tweet {
 
 /* Tweet box hover*/
 article.tweet:hover {
-  box-shadow: 7px 7px rgb(207, 207, 226);
+  box-shadow: 7px 7px rgb(190, 202, 236);
 }
 
 /* Area for Icon, name, username and tweet */
@@ -38,6 +38,16 @@ article.tweet:hover {
   border-bottom: 1px solid grey;
   border-width: thick;
   padding-bottom: 30px;
+  font-size: 20px;
+  font-weight:normal;
+  color: black;
+  /* to split the text inside the block*/
+  display: block;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  overflow: hidden;
+  max-height: 5.5em;
+  line-height: 1.8em;
 }
 
 /* Icon and name */
@@ -71,7 +81,17 @@ footer {
   color: grey
 }
 
+
 .icons i:hover {
   color: darkgoldenrod;
   cursor: pointer;
+}
+
+.error-message {
+  display: flex;
+  color: red;
+  border: 3px solid red;
+  margin-top: 20px;
+  font-size: 20px;
+  text-align:center
 }

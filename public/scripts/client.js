@@ -4,68 +4,32 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
-
-const data = [
-  {
-    "user": {
-      "name": "Newton",
-      "avatars": "https://i.imgur.com/73hZDYK.png"
-      ,
-      "handle": "@SirIsaac"
-    },
-    "content": {
-      "text": "If I have seen further it is by standing on the shoulders of giants"
-    },
-    "created_at": 1461116232227
-  },
-  {
-    "user": {
-      "name": "Descartes",
-      "avatars": "https://i.imgur.com/nlhLi3I.png",
-      "handle": "@rd" },
-    "content": {
-      "text": "Je pense , donc je suis"
-    },
-    "created_at": 1461113959088
-  }
-]
-
-// long format of jQuery
-// (document).ready(() => {
-// })
-
+// Short format of jQuery 
 $(() => {
-  const loadTweets = () => {
-    $.ajax ({
-      url: "/tweets",
-      method: "GET",
-      datatype: "JSON",
-      success: (tweets) => {
-      renderTweets(tweets)
-      },
-      error:(err) => {
-        console.log(`There was an error: ${error}`)
-      }
-    })
-  }
-  loadTweets();
 
-const renderTweets = function(tweets) {
-// loops through tweets
-// calls createTweetElement for each tweet
-// takes return value and appends it to the tweets container
-  for (const tweet of tweets) {
-    const $tweet = createTweetElement(tweet)
-    // Append to tweets container. 
-    // Prepend gets the latest post first
-    $('section.all-tweets').prepend($tweet);
-  }
-}
+  const escape = function (str) {
+    let div = document.createElement("div");
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  };
 
-// Get the article of tweet
-const createTweetElement = function(tweet) {
-  const $tweet = `
-  <article class="tweet">
+  // Loops through tweets
+  // Calls createTweetElement for each tweet
+  // Takes return value and appends it to the tweets container
+  // Append to tweets container. 
+  // Prepend gets the latest post first
+  const renderTweets = function (tweets) {
+    for (const tweet of tweets) {
+      const $tweet = createTweetElement(tweet)
+      $('section.all-tweets').prepend($tweet);
+    }
+  }
+
+  // Get the article of tweet
+  // Moved out from HTML file 
+  const createTweetElement = function (tweet) {
+    const $tweet = `
+    <article class="tweet">
   <header class="tweet header">
     <div class="user-profile">
       <img id="icon" src=${tweet.user.avatars}/>
@@ -73,7 +37,7 @@ const createTweetElement = function(tweet) {
     </div>
       <span class="username"> ${tweet.user.handle} </span>
   </header>
-  <p class= "tweet-text">${tweet.content.text}</p>
+  <p class= "tweet-text">${escape(tweet.content.text)}</p>
   <footer>
     <div class="date">${timeago.format(tweet.created_at)}</div>
     <div class = "icons">
@@ -83,30 +47,62 @@ const createTweetElement = function(tweet) {
     </div>
   </footer>
   </article>`;
-  return $tweet;
+    return $tweet;
   }
 
-  renderTweets(data);
 
-  $('#tweet-form').submit(function (event) {
-    //prevent the web to refresh
-    event.preventDefault()
-    const serializedData = $(this).serialize();
-    $.post("/tweets", serializedData, (response) => {
-      loadTweets()
-      console.log('response:', response);
-    });
-  })
-})
+  // Make GET request to tweet database
+  const loadTweets = function () {
+    //$.ajax('/tweets', { method: "GET" })
+    $.ajax('/tweets')
+      .then(function (allTweets) {
+        renderTweets(allTweets);
+      })
+  }
+  loadTweets();
 
-/* Make GET request to tweet database
-*/
 
-const loadTweets =function() {
-  $.ajax('/tweets/', {method: "GET"})
-    .then(function(allTweets) {
-      renderTweets(allTweets);
+  // Add an event listener that listens for the submit event
+  // Prevent the default behaviour of the submit event (data submission and page refresh)
+  //$('.new-tweet form').submit(function (event) {
+    $('.new-tweet form').on("submit",function (event) {
+    event.preventDefault();
+    const $form = $(this);
+    const newTweetTextStr = $form.children('textarea').val();
+
+    // If there is no input, error message pop up
+    // The new-tweet will slide down
+    if (!newTweetTextStr) {
+      $(".validation-text").slideUp();
+      $(".validation-text").html("All tweets must contain at least one character. Your tweet currently does not.").addClass("error-message").slideDown(600)
+      
+      // If the character is more than 140, error message pop up
+      // The new-tweet will slide down
+    } else if (newTweetTextStr.length > 140) {
+      $(".validation-text").slideUp();
+      $(".validation-text").html("We do not accept tweets longer than 140 characters. Your tweet is currently too long.").addClass("error-message").slideDown(100)
+
+      // Serialize the form data and send it to the server as a query string
+    } else {
+      $(".validation-text").slideUp();
+      const tweet = $form.serialize();
+      $.ajax({ url: "/tweets", method: 'POST', data: tweet })
+        //.then(function (successfulPost) {
+        //  return $.ajax('/tweets/', { method: 'GET' })
+        //})
+
+        // Reset the form and use renderTweets function to add new tweet to the page
+        .then(function () {
+          //$form[0].reset();
+          //$form.children('textarea').text(140);
+          $('counter').val(140);
+          $('.tweet-post').val('')
+          loadTweets();
+        })
+        .fail(function (err) {
+          alert(err.responseJSON.error);
+        })
     }
-  )
-}
-loadTweets();
+  })
+  loadTweets();
+});
