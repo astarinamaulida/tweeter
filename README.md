@@ -11,14 +11,14 @@ This repository is the starter code for the project: Students will fork and clon
 !["Tweet Desktop View"](https://github.com/astarinamaulida/tweeter/blob/master/docs/tweet-desktop-view.png)
 
 
-*Main page for smaller desktop view*
-
-!["Tweet Smaller Desktop View"](https://github.com/astarinamaulida/tweeter/blob/master/docs/tweet-smaller-desktop.png)
-
-
 *Main page in desktop size with error message*
 
 !["Tweet Error Message"](https://github.com/astarinamaulida/tweeter/blob/master/docs/tweet-error-message.png)
+
+
+*Main page for smaller desktop view*
+
+!["Tweet Smaller Desktop View"](https://github.com/astarinamaulida/tweeter/blob/master/docs/tweet-smaller-desktop.png)
 
 
 *Main page for tablet view*
