@@ -8,7 +8,7 @@ This repository is the starter code for the project: Students will fork and clon
 
 *Tweeter demo*
 
-!["Tweeter app"](https://github.com/astarinamaulida/tweeter/blob/master/docs/tweet-gif.gif)
+!["Tweeter app"](https://github.com/astarinamaulida/tweeter/blob/master/docs/tweet-demo.gif)
 
 
 *Main page for desktop view*
