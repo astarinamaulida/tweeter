@@ -19,7 +19,7 @@ section form {
 
 /* Box placeholder to tweet*/
 textarea {
-  height: 50px;
+  height: 100px;
   width: 100%;
   font-size: 25px;
   font-weight: bold;
