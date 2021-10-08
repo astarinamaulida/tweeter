@@ -65,12 +65,12 @@ $(() => {
     // If there is no input, error message will slide up
     if (!newTweetTextStr) {
       $(".validation-text").slideUp();
-      $(".validation-text").html("All tweets must contain at least one character. Your tweet currently does not.").addClass("error-message").slideDown(600);
+      $(".validation-text").html("Error! All tweets must contain at least one character.").addClass("error-message").slideDown(600);
       
       // If the character is more than 140, error message will slide up
     } else if (newTweetTextStr.length > 140) {
       $(".validation-text").slideUp();
-      $(".validation-text").html("We do not accept tweets longer than 140 characters. Your tweet is currently too long.").addClass("error-message").slideDown(600);
+      $(".validation-text").html("Error! Your tweet is longer than 140 characters.").addClass("error-message").slideDown(600);
 
       // Serialize the form data and send it to the server as a query string
     } else {
