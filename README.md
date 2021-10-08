@@ -7,18 +7,27 @@ This repository is the starter code for the project: Students will fork and clon
 ## Final Product
 
 *Main page for desktop view*
+
 !["Tweet Desktop View"](https://github.com/astarinamaulida/tweeter/blob/master/docs/tweet-desktop-view.png)
 
+
 *Main page for smaller desktop view*
+
 !["Tweet Smaller Desktop View"](https://github.com/astarinamaulida/tweeter/blob/master/docs/tweet-smaller-desktop.png)
 
+
 *Main page in desktop size with error message*
+
 !["Tweet Error Message"](https://github.com/astarinamaulida/tweeter/blob/master/docs/tweet-error-message.png)
 
+
 *Main page for tablet view*
+
 !["Tweet Tablet View"](https://github.com/astarinamaulida/tweeter/blob/master/docs/tweet-tablet-view.png)
 
+
 *Tweets with mouse hovering to the tweet box and icons*
+
 !["Tweets"](https://github.com/astarinamaulida/tweeter/blob/master/docs/tweets.png)
 
 ## Getting Started
