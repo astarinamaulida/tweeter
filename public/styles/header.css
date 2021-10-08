@@ -13,17 +13,41 @@
   color: #FFFF;
 }
 
-div img {
-  width: 230px;
-  padding-bottom: 0
+.profile-image {
+  width: 180px;
+  padding-bottom: 0;
+  padding-top: 80px
 }
 
 /* name */
 div h2 {
-  padding-bottom: 50px;
+  padding-bottom: 80px;
   padding-top: 0px
 }
 
 .light {
   font-weight: 300;
+}
+
+body header img {
+  margin: 5px;
+}
+
+body header h2 {
+  margin: 5px;
+}
+
+@media (min-width: 850px) {
+  body > header {
+    width: 30vw;
+    float: left;
+    margin: 170px 0px 0px 50px;
+    position: fixed;
+  }
+  .profile-image {
+    padding-top: 20px;
+  }
+  div h2 {
+    text-align: center;
+  }
 }

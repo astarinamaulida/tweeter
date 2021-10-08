@@ -5,12 +5,12 @@ nav {
   top: 0;
   width: 100%;
   justify-content: flex-start;
-  background-color: transparent;
+  background-color: #8badd4;
   color:#FFFFFF;
   font-family: 'Bungee', cursive;
   padding-left: 1.5em;
   padding-right: 1.5em;
-  padding-top: 2em;
+  padding-top: 1.5em;
   position: fixed
 }
 
@@ -40,5 +40,12 @@ nav {
   }
   to {
     padding: 10px;
+  }
+}
+
+@media (min-width: 851px) {
+  nav {
+  background-color: #8badd4;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
   }
 }
