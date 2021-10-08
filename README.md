@@ -8,6 +8,14 @@ This repository is the starter code for the project: Students will fork and clon
 
 !["Tweet Desktop View"](https://github.com/astarinamaulida/tweeter/blob/master/docs/tweet-desktop-view.png)
 
+!["Tweet Smaller Desktop View"](https://github.com/astarinamaulida/tweeter/blob/master/docs/tweet-smaller-desktop.png)
+
+!["Tweet Error Message"](https://github.com/astarinamaulida/tweeter/blob/master/docs/tweet-error-message.png)
+
+!["Tweet Tablet View"](https://github.com/astarinamaulida/tweeter/blob/master/docs/tweet-tablet-view.png)
+
+!["Tweets"](https://github.com/astarinamaulida/tweeter/blob/master/docs/tweets.png)
+
 ## Getting Started
 
 1. Fork this repository, then clone your fork of this repository.
