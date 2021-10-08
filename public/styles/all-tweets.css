@@ -21,7 +21,7 @@ article.tweet:hover {
 
 /* Area for Icon, name, username and tweet */
 .tweet header {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   color: #545149;
   display: flex;
   flex-direction: row;
@@ -29,19 +29,21 @@ article.tweet:hover {
   padding-bottom: 30px;
 }
 
+/* User full name */
 .name {
   padding-top: 20px;
-  padding-left: 10px
+  padding-left: 10px;
 }
 
+/* Posted tweet */
+/* To split the text to some lines so it fits in the block*/
 .tweet-text {
   border-bottom: 1px solid grey;
   border-width: thick;
   padding-bottom: 30px;
   font-size: 20px;
-  font-weight:normal;
+  font-weight: normal;
   color: black;
-  /* to split the text inside the block*/
   display: block;
   text-overflow: ellipsis;
   word-wrap: break-word;
@@ -58,6 +60,7 @@ article.tweet:hover {
   align-items: center;
 }
 
+/* User avatar */
 #icon {
   height: 50px;
   width: 50px;
@@ -72,27 +75,27 @@ article.tweet:hover {
 }
 
 /* Date and icons */
-footer {
+article footer {
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
   margin-bottom: 10px;
   font-weight: bold;
-  color: grey
+  color: grey;
 }
 
-
+/* Icons hovering */
 .icons i:hover {
   color: darkgoldenrod;
   cursor: pointer;
 }
 
+/* Error message */
 .error-message {
   display: flex;
   color: red;
   border: 3px solid red;
   margin-top: 20px;
   font-size: 20px;
-  text-align:center
-  
+  text-align: center;
 }

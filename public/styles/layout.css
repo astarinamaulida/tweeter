@@ -25,20 +25,21 @@ body {
  */
 
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   justify-content: space-between;
 }
 
 main {
-  background-color: #f4f1ec;
+  width: 90%;
   margin: auto;
   font-size: 18px;
-  width: 90%;
+  background-color: #f4f1ec;
 }
 
 @media (min-width: 850px) {
   main{
-    margin: 140px 50px 50px 50px;
     width: 50vw;
     float: right;
+    margin: 180px 50px 50px 50px;
+  }
 }

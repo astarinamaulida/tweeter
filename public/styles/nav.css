@@ -1,17 +1,17 @@
 /* Top Nav*/
 nav {
   display: flex;
+  width: 100%;
   height: 120px;
   top: 0;
-  width: 100%;
   justify-content: flex-start;
-  background-color: #8badd4;
-  color:#FFFFFF;
-  font-family: 'Bungee', cursive;
   padding-left: 1.5em;
   padding-right: 1.5em;
   padding-top: 1.5em;
-  position: fixed
+  position: fixed;
+  background-color: #8badd4;
+  color:#FFFFFF;
+  font-family: "Bungee", cursive;
 }
 
 /* For "Write a new tweet" and arrow sign*/
@@ -20,7 +20,7 @@ nav {
   align-items: center;
   flex-direction: column;
   margin-left: auto;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 #left-nav {

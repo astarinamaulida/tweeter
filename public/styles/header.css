@@ -7,47 +7,44 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #FFFF;
   background-color: #8badd4;
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
-  font-family: 'Source Sans Pro', sans-serif;
-  color: #FFFF;
 }
 
+/* User profile picture */
 .profile-image {
   width: 180px;
   padding-bottom: 0;
-  padding-top: 80px
+  padding-top: 80px;
+  margin: 5px;
 }
 
-/* name */
-div h2 {
+/* User full name */
+body header h2 {
+  margin: 5px;
   padding-bottom: 80px;
-  padding-top: 0px
+  padding-top: 0px;
 }
 
+/* User last name */
 .light {
   font-weight: 300;
 }
 
-body header img {
-  margin: 5px;
-}
-
-body header h2 {
-  margin: 5px;
-}
-
+/* Responsive design */
 @media (min-width: 850px) {
   body > header {
     width: 30vw;
     float: left;
-    margin: 170px 0px 0px 50px;
+    margin: 200px 0px 0px 50px;
     position: fixed;
   }
   .profile-image {
-    padding-top: 20px;
+    padding-top: 20px
   }
-  div h2 {
+  body header h2 {
     text-align: center;
   }
 }
