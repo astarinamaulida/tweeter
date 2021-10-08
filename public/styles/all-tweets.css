@@ -89,13 +89,3 @@ article footer {
   color: darkgoldenrod;
   cursor: pointer;
 }
-
-/* Error message */
-.error-message {
-  display: flex;
-  color: red;
-  border: 3px solid red;
-  margin-top: 20px;
-  font-size: 20px;
-  text-align: center;
-}
