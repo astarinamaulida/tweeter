@@ -6,6 +6,11 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## Final Product
 
+*Tweeter demo*
+
+!["Tweeter app"](https://github.com/astarinamaulida/tweeter/blob/master/docs/tweeter-gif.gif)
+
+
 *Main page for desktop view*
 
 !["Tweet Desktop View"](https://github.com/astarinamaulida/tweeter/blob/master/docs/tweet-desktop-view.png)
