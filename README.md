@@ -11,25 +11,6 @@ This repository is the starter code for the project: Students will fork and clon
 !["Tweeter app"](https://github.com/astarinamaulida/tweeter/blob/master/docs/tweet-demo.gif)
 
 
-*Main page for desktop view*
-
-!["Tweet Desktop View"](https://github.com/astarinamaulida/tweeter/blob/master/docs/tweet-desktopview.png)
-
-
-*Main page in desktop view with error message*
-
-!["Tweet Error Message"](https://github.com/astarinamaulida/tweeter/blob/master/docs/tweet-error.png)
-
-
-*Main page for tablet view*
-
-!["Tweet Tablet View"](https://github.com/astarinamaulida/tweeter/blob/master/docs/tweet-tabletview.png)
-
-
-*Tweets with mouse hovering to the tweet box and icons*
-
-!["Tweets"](https://github.com/astarinamaulida/tweeter/blob/master/docs/tweets.png)
-
 ## Getting Started
 
 1. Fork this repository, then clone your fork of this repository.
