@@ -1,4 +1,4 @@
-$(document).ready(function (event) {
+$(document).ready(function(event) {
   // --- our code goes here ---
   $('.new-tweet textarea').on('input', function() {
     let newTweetLength = $(this).val().length;
