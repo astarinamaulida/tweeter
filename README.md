@@ -12,6 +12,7 @@ This repository is the starter code for the project: Students will fork and clon
 
 
 *Tweeter responsive design from desktop to tablet*
+
 !["Tweeter responsive design"](https://github.com/astarinamaulida/tweeter/blob/master/docs/tweeter-responsive-design.gif)
 
 
