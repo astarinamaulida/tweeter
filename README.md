@@ -8,12 +8,12 @@ This repository is the starter code for the project: Students will fork and clon
 
 *Tweeter demo*
 
-!["Tweeter app"](https://github.com/astarinamaulida/tweeter/blob/master/docs/tweet-demo.gif)
+!["Tweeter app"](https://github.com/astarinamaulida/tweeter/blob/master/docs/tweeter-demo.gif)
 
 
 *Tweeter responsive design from desktop to tablet*
 
-!["Tweeter responsive design"](https://github.com/astarinamaulida/tweeter/blob/master/docs/tweet-responsive-design.gif)
+!["Tweeter responsive design"](https://github.com/astarinamaulida/tweeter/blob/master/docs/tweeter-responsive-design.gif)
 
 
 ## Getting Started
