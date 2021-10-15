@@ -47,6 +47,16 @@ const createTweetElement = function(tweet) {
   return $tweet;
 };
 
+const errorMessage = function(error) {
+  let injection;
+  if (error === "empty") {
+    injection = `<div class= "error-message"> Oops! All tweets must contain at least one character. Please write a tweet with a minimum of one character.</div>`;
+  } else {
+    injection = `<div class= "error-message"> Oops! Your tweet is longer than 140 characters. Please write a tweet with a maximum of 140 characters.</div>`;
+  }
+  return injection;
+};
+
 // Short format of jQuery
 $(() => {
   // Add an event listener that listens for the submit event
@@ -58,20 +68,14 @@ $(() => {
 
     // If there is no input, error message will slide down
     if (!newTweetTextStr) {
-      $(".validation-text").html("Oops! All tweets must contain at least one character. Pleaset write a tweet with a minimum of one character.").addClass("error-message");
-      setTimeout(() => {
-        $(".validation-text").slideUp();
-      }, 3000);
-
+      $(".validation-text").html(errorMessage("empty")).slideDown('fast').delay(1500).fadeOut(1000);
+      
       // If the character is more than 140, error message will slide down
     } else if (newTweetTextStr.length > 140) {
-      $(".validation-text").html("Oops! Your tweet is longer than 140 characters. Please write a tweet with a maximum of 140 characters.").addClass("error-message");
-      setTimeout(() => {
-        $(".validation-text").slideUp();
-      }, 3000);
-
+      $(".validation-text").html(errorMessage("limit")).slideDown('fast').delay(1500).fadeOut(1000);
+      
       // Serialize the form data and send it to the server as a query string
-    } else {
+    }  else {
       $(".validation-text").slideUp();
       const tweet = $form.serialize();
       $.ajax({ url: "/tweets", method: "POST", data: tweet })
